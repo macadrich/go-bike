@@ -20,8 +20,8 @@ if ! [ -x "$(command -v migrate)" ]; then
     exit 1
 fi
 
-DB_USER="${POSTGRES_USER:=adriel}"
-DB_PASSWORD="${POSTGRES_PASSWORD:=artiza}"
+DB_USER="${POSTGRES_USER:=user}"
+DB_PASSWORD="${POSTGRES_PASSWORD:=password}"
 DB_NAME="${POSTGRES_DB:=indegodb}"
 DB_PORT="${POSTGRES_PORT:=5432}"
 DB_HOST="${POSTGRES_HOST:=localhost}"

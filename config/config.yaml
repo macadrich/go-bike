@@ -4,8 +4,8 @@ Authorization:
 Database:
   Host: "postgres"
   Port: "5432"
-  User: "adriel"
-  Password: "artiza"
+  User: "user"
+  Password: "password"
   Name: "indegodb"
 
 ThirdpartAPI:

@@ -3,8 +3,8 @@ services:
     image: postgres:13
     container_name: postgres
     environment:
-      POSTGRES_USER: adriel
-      POSTGRES_PASSWORD: artiza
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
       POSTGRES_DB: indegodb
     ports:
       - "5432:5432"
@@ -18,7 +18,7 @@ services:
       - "8080:8080"
     restart: on-failure
     environment:
-      DATBASE_URL: postgres://adriel:artiza@postgres/indegodb?sslmode=disable
+      DATBASE_URL: postgres://user:password@postgres/indegodb?sslmode=disable
     networks:
       - go-bike-network
 networks:
