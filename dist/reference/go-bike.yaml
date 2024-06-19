@@ -1,0 +1,41 @@
+openapi: 3.1.0
+x-stoplight:
+  id: v4ywajdgtc79t
+info:
+  title: go-bike
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  Insert Station:
+    parameters: []
+    post:
+      summary: Insert Station
+      operationId: postapi-v1-indego-data-fetch-and-store-it-db
+      responses:
+        '200':
+          description: OK
+      description: Insert latest data from Indego API
+  /user: {}
+  /Snapshot All Station:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+      operationId: get-Snapshot-All-Station
+      description: Query all stations base on lastUpdated
+  /Snapshot Station:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+      operationId: get-Snapshot-Station
+      description: Get specific station base on lastUpdated
+      requestBody:
+        content: {}
+components:
+  schemas: {}

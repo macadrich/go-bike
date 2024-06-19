@@ -1,0 +1,17 @@
+info:
+  contact: {}
+paths:
+  /healthcheck:
+    get:
+      consumes:
+      - application/json
+      description: get string health check
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+      summary: Show if api is running
+      tags:
+      - example
+swagger: "2.0"
