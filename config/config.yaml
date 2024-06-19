@@ -9,7 +9,7 @@ Database:
   Name: "indegodb"
 
 ThirdpartAPI:
-  APIKey: "b0b0632bb7839a233c097b660416435c"
+  APIKey: "weather_api_key_here"
   CurrentWeather: "https://api.openweathermap.org/data/2.5/weather"
   City: "Philadelphia"
   BicycleTrancit: "https://bts-status.bicycletransit.workers.dev/phl"
